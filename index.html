@@ -59,6 +59,19 @@
             <div class="container my-3">
                 <div class="row align-items-center">
                     <div class="col-md-6">
+                        <h1 class="text-align-center">Simple Chess AI</h1>
+                        <div class="row align-items-center justify-content-center">
+                            <div class="form-group">
+                                <label for="search-depth">Search Depth (Black):</label>
+                                <select id="search-depth">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3" selected>3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                        </div>
                         <h1 class="text-align-center">Chess</h1>
                         
                         <div class="row justify-content-center">
@@ -93,7 +106,18 @@
                                 <h2>Computer vs. Computer</h2>
                             </div>
                         </div>
-                        
+                        <div class="row align-items-center justify-content-center">
+                            <div class="form-group">
+                                <label for="search-depth-white">Search Depth (White):</label>
+                                <select id="search-depth-white">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3" selected>3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                        </div>
                         <div class="row text-align-center">
                             <div class="col-md-6 my-2">
                                 <button class="btn btn-success" id="compVsCompBtn">Start Game</button>
