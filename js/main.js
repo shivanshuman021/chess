@@ -328,7 +328,14 @@ function updateAdvantage()
 function getBestMove (game, color, currSum) {
 
     positionCount = 0;
-    var depth = parseInt(5);
+     if (color === 'b')
+    {
+        var depth = parseInt($('#search-depth').find(':selected').text());
+    }
+    else
+    {
+        var depth = parseInt($('#search-depth-white').find(':selected').text());
+    }
 
     var d = new Date().getTime();
     var [bestMove, bestMoveValue] = minimax(game, depth, Number.NEGATIVE_INFINITY, Number.POSITIVE_INFINITY, true, currSum, color);
