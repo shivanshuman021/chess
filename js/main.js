@@ -328,7 +328,7 @@ function updateAdvantage()
 function getBestMove (game, color, currSum) {
 
     positionCount = 0;
-    var depth = 5;
+    var depth = parseInt(5);
 
     var d = new Date().getTime();
     var [bestMove, bestMoveValue] = minimax(game, depth, Number.NEGATIVE_INFINITY, Number.POSITIVE_INFINITY, true, currSum, color);
